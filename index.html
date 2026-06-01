@@ -65,9 +65,85 @@
         .restart-btn:hover {
             background: #45a049;
         }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:20px;
+        }
+
+        .cards{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .card{
+            flex:1 1 300px;
+            background:#f4f4f4;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        img{
+            max-width:100%;
+            height:auto;
+            display:block;
+        }
+
+        /* Tablet */
+        @media (max-width: 768px){
+            .cards{
+                flex-direction:column;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 480px){
+            .container{
+                width:95%;
+            }
+
+            .card{
+                padding:15px;
+            }
+        }
+
+        *{
+          box-sizing:border-box;
+        }
+
+        img{
+            max-width:100%;
+            height:auto;
+        }
+
+        .cards{
+            display:flex;
+            flex-wrap:wrap;
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="cards">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+        </div>
+    </div>
+    
     <div class="game-container">
         <h1> You want to  Collect the Stars of Galaxy </h1>
         <div class="ui">
